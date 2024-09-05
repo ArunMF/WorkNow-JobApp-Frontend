@@ -1,0 +1,10 @@
+#SvJobOverviewDiv{
+    height: 615px;
+    overflow: auto;
+    top: 20px;
+    position: sticky;
+}
+
+#SvJobCards:hover{
+    background-color: rgb(245, 245, 245);
+}

@@ -1,0 +1,18 @@
+#similarComps #mainHeading, #similarCompModal #mainHeading{
+    font-family: 'Jost';
+    font-weight: 800;
+}
+
+#similarComps h6, #similarCompModal h6{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#similarComps{
+    border-bottom: 1px solid rgba(163, 163, 163, 0.308);
+}
+
+#similarCompModal #similarModalBody{
+    height: 400px;
+    overflow: auto;
+}

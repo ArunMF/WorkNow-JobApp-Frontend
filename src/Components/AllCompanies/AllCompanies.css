@@ -1,0 +1,38 @@
+#searchInput {
+    background: url('https://icon-library.com/images/search-icon-png-transparent/search-icon-png-transparent-18.jpg') no-repeat scroll 10px 10px;
+    padding-left: 30px;
+    border: 1px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#filterCompanies{
+    height: 550px;
+    /* overflow: auto; */
+    top: 30px;
+    position: sticky;
+}
+
+#companyCard{
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#companyCard:hover{
+    /* box-shadow: 1px 1px 10px rgb(185, 185, 185); */
+    /* background-color: rgb(250, 250, 250); */
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#companyCard h6{
+    font-weight: 1000;
+}
+
+#companyCard h5{
+    font-family: 'Jost';
+    font-weight: 600;
+}
+
+#exploreHead, #filterCompanies h3{
+    font-family: 'Jost';
+    font-weight: 700;
+}

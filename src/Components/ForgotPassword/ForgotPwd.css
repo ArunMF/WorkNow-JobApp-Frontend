@@ -1,0 +1,14 @@
+/* #masterDiv{
+    background-image: url('../../Images/pageBgImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+#forgMainDiv h1{
+    font-family: 'Jost';
+    font-weight: 700;
+}
+
+#forgMainDiv h5{
+    text-shadow: 1px 1px 5px gray;
+}

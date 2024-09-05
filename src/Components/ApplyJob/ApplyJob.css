@@ -1,0 +1,12 @@
+#jobDetails{
+    font-size: 14px;
+}
+
+#JobDescription{
+    width: 40%;
+    overflow: auto;
+}
+
+#jobForm{
+    width: 60%;
+}

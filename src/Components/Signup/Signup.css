@@ -1,0 +1,16 @@
+#signupMainDiv{
+    background-image: url('../../Images/pageBgImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#signupBgDiv{
+    background-image: url('../../Images/signupDivImg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(205, 232, 255); */
+}
+
+#signupBgDiv h5{
+    text-shadow: 1px 1px 5px gray;
+}

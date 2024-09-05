@@ -1,0 +1,10 @@
+#AppJobOverviewDiv{
+    height: 615px;
+    overflow: auto;
+    top: 20px;
+    position: sticky;
+}
+
+#AppJobCards:hover{
+    background-color: rgb(245, 245, 245);
+}
