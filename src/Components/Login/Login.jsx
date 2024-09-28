@@ -41,7 +41,7 @@ function Login() {
                             <Link to="/ForgotPassword" style={{ textDecoration: "none" }}><b>Forgot password?</b></Link>
                         </div>
 
-                        <button className='btn btn-success mb-4 w-100' type='button'>Login</button>
+                        <button className='btn mb-4 w-100' id='btnStyle' type='button'>Login</button>
 
                         <div className='text-center'>
                             <p><b>Don't have an account?</b> <Link to="/SignUp" style={{ textDecoration: "none" }}><b>Sign Up</b></Link></p>

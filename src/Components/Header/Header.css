@@ -20,10 +20,10 @@
   }
   
   nav a {
-    color: #444;
+    color: #000000;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
+    /* text-transform: capitalize; */
+    font-size: 15px;
     font-weight: 700;
   }
   
@@ -49,8 +49,10 @@
   }
 
   #settingsDropdown span{
-    font-size: 14px;
+    color: #000000;
+    font-size: 15px;
     font-weight: 700;
+    /* text-transform: capitalize; */
   }
   
   #settingsDropdown #settingsOpts button:hover{

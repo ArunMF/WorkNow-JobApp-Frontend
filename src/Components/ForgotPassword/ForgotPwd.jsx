@@ -31,7 +31,7 @@ function ForgotPwd() {
                             <Form.Control type="email" placeholder="Enter email address" />
                         </Form.Group>
 
-                        <button className='btn btn-primary mb-4' type='button'>Get verification code</button>
+                        <button className='btn mb-4' id='btnStyle' type='button'>Get verification code</button>
 
                         <Form.Group className="w-75 me-1 mb-5" controlId="formBasicCode">
                             <Form.Label className='ms-1'><b>Verification code</b></Form.Label>
@@ -54,7 +54,7 @@ function ForgotPwd() {
                                     <Form.Control type="password" placeholder="Enter confirm password" />
                                 </Form.Group>
 
-                                <button className='btn btn-primary w-100' type='button'>Confirm</button>
+                                <button className='btn w-100' id='btnStyle' type='button'>Confirm</button>
                             </div>
 
                         }

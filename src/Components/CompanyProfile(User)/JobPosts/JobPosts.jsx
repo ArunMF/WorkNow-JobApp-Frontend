@@ -48,7 +48,7 @@ function JobPosts() {
                             <Form.Control type="text" placeholder="Select a Job Title" />
                         </Form.Group>
 
-                        <button className='btn btn-success w-100' type='button'>Apply</button>
+                        <button className='btn w-100' type='button' id='btnStyle'>Apply</button>
                     </Form>
                 </Col>
 

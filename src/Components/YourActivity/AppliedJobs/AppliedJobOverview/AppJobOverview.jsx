@@ -93,11 +93,11 @@ function AppJobOverview() {
 
                 {/* Education, etc. */}
                 <div>
-                    <p className='my-3'><b><FaGraduationCap className='mb-1' /> Education: </b>Bachelor's Degree</p>
-                    <p className='my-3'><b><MdWork className='mb-1' /> Work Experience: </b>1 - 2 Year(s)</p>
-                    <p className='my-3'><b><FaUserTie className='mb-1' /> Employement Type: </b>Full-time</p>
-                    {/* <p className='my-3'><b><MdOutlinePayments className='mb-1' /> Salary: </b><MdOutlineCurrencyRupee />18000 - <MdOutlineCurrencyRupee />21000/Month</p> */}
-                    <p className='my-3'><b><MdLocationCity className='mb-1' /> Location Type: </b>On-site</p>
+                    <p className='my-3'><b><FaGraduationCap className='mb-1' /> Education </b><br />Bachelor's Degree</p>
+                    <p className='my-3'><b><MdWork className='mb-1' /> Work Experience </b><br />1 - 2 Year(s)</p>
+                    <p className='my-3'><b><FaUserTie className='mb-1' /> Employement Type </b><br />Full-time</p>
+                    {/* <p className='my-3'><b><MdOutlinePayments className='mb-1' /> Salary </b><br/><MdOutlineCurrencyRupee />18000 - <MdOutlineCurrencyRupee />21000/Month</p> */}
+                    <p className='my-3'><b><MdLocationCity className='mb-1' /> Mode of Work </b><br />On-site</p>
                 </div>
 
                 {/* Other details */}

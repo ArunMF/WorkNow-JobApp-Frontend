@@ -26,7 +26,7 @@ function CompanyReg() {
                             <Form.Control type="password" placeholder="Enter password" />
                         </Form.Group>
 
-                        <button className='btn btn-success mb-4' type='button'>Get verification code</button>
+                        <button className='btn mb-4' id='btnStyle' type='button'>Get verification code</button>
 
                         <div className='d-flex mb-4'>
                             <Form.Group className="w-100" controlId="formBasicCode">
@@ -69,7 +69,7 @@ function CompanyReg() {
                             <Form.Control type="file" />
                         </Form.Group>
 
-                        <button className='btn btn-success w-100 py-2' type='button'>Submit</button>
+                        <button className='btn w-100 py-2' id='btnStyle' type='button'>Submit</button>
                     </div>
                 }
             </Form>

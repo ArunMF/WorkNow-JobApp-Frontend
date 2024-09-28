@@ -25,7 +25,7 @@ function AllCompanies() {
                     <option>Tata Consultancy Services</option>
                     <option>Luminar Technohub</option>
                 </datalist>
-                <button className='btn btn-primary' id='searchBtn'>Go</button>
+                <button className='btn btn-primary' style={{borderRadius:"10px"}} id='btnStyle'>Go</button>
             </div>
 
             <h3 className='my-3 mx-5 fs-3' id='exploreHead'>Explore Companies</h3>
@@ -62,11 +62,11 @@ function AllCompanies() {
                             </Form.Select>
                         </Form.Group>
 
-                        <button className='btn btn-success w-100' type='button'>Apply</button>
+                        <button className='btn w-100' type='button' id='btnStyle'>Apply</button>
                     </Form>
                 </Col>
                 <Col className='col-8 px-3 border-0 border-end'>
-                    <Card className='mb-3 px-2 shadow rounded' id='companyCard' onClick={()=>{navigate('/CompanyProfile')}}>
+                    <Card className='mb-3 px-2 shadow rounded' id='companyCard' onClick={()=>{navigate('/CompanyProfileForUser')}}>
                         <Card.Body>
                             <Row>
                                 <Col className='col-9 d-flex'>

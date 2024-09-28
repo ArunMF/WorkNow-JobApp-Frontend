@@ -34,7 +34,7 @@ function JobSeekerReg() {
                             <Form.Control type="password" placeholder="Enter password" />
                         </Form.Group>
 
-                        <button className='btn btn-success mb-4' type='button'>Get verification code</button>
+                        <button className='btn mb-4' id='btnStyle' type='button'>Get verification code</button>
                         <div className='d-flex mb-4'>
                             <Form.Group className="w-100" controlId="formBasicCode">
                                 {/* <Form.Label className='ms-1'><b>Verification code</b></Form.Label> */}
@@ -73,7 +73,7 @@ function JobSeekerReg() {
                                 <option value="4">SSLC</option>
                             </Form.Select>
                         </Form.Group>
-                        <button className='btn btn-success w-100 py-2' type='button'>Create Account</button>
+                        <button className='btn w-100 py-2' id='btnStyle' type='button'>Create Account</button>
                     </div>
                 }
             </Form>

@@ -1,73 +1,84 @@
 import React from 'react'
 import './Home.css'
-import { Row, Col } from 'react-bootstrap'
-import { ImSearch } from "react-icons/im";
-import { MDBCard, MDBCardBody } from 'mdb-react-ui-kit';
-import { IoMdStar } from "react-icons/io";
-import { MdOutlineCurrencyRupee } from "react-icons/md";
-import { AiFillThunderbolt } from "react-icons/ai";
-import JobOverview from './JobOverview/JobOverview';
+import { Col, Row } from 'react-bootstrap'
+import { FaArrowRight } from "react-icons/fa6";
+import { FaStar } from "react-icons/fa";
+import { PiSuitcaseSimpleFill } from "react-icons/pi";
 import { PiBuildingOfficeFill } from "react-icons/pi";
+import { RxActivityLog } from "react-icons/rx";
+import { ImUserTie } from "react-icons/im";
 
 function Home() {
-  return (
-    <div>
-      <div className='d-flex justify-content-center pt-3 pb-4 mx-5'>
-        <input type="text" list='searchJob' className='w-25 bg-light' id='jobInput' placeholder='Find your perfect job' />
-        <datalist id='searchJob'>
-          <option>Web Developer</option>
-          <option>Flutter Developer</option>
-          <option>MERN Stack Developer</option>
-        </datalist>
-        <input type='text' className='mx-1 bg-light' placeholder='Location' id='locationInput' />
-        <button className='btn btn-success' id='searchBtn'><ImSearch /></button>
-      </div>
-
-      <Row className='m-2'>
-        <Col className='col-4 ps-4 pe-3 py-2'>
-          <MDBCard className='mb-2 px-1 shadow' id='homeJobCard'>
-            <MDBCardBody>
-              <div>
-                <span className='me-2'><img height='13px' src="https://companieslogo.com/img/orig/CTSH-82a8444b.png?t=1652276339&download=true" alt="" /></span>
-                <span className='me-3' style={{ fontSize: "13px", fontWeight: "600" }}>Cognizant Technology Solutions</span>
-                <span style={{ fontSize: "13px" }}>4.7 <IoMdStar className='mb-1' /></span>
-              </div>
-              <div className='mt-1'>
-                <span className='text-primary' style={{ fontSize: "16px", fontWeight: "1000" }}>Programmer Trainee</span><br />
-                <span style={{ fontSize: "14px" }}><b>Kochi, India</b></span><br />
-                <span style={{ fontSize: "14px" }}><MdOutlineCurrencyRupee />18K - <MdOutlineCurrencyRupee />21K/M</span>
-              </div>
-              <div className='d-flex mt-1'>
-                <div className='w-50'><span className='text-success px-2 py-1 rounded' style={{ backgroundColor: "rgb(175, 255, 195)", fontSize: "14px" }}><AiFillThunderbolt /> Easy Apply</span></div>
-                <span className='w-50 d-flex justify-content-end align-items-end text-secondary' style={{ float: "right", fontSize: "13px" }}>Today</span>
-              </div>
-            </MDBCardBody>
-          </MDBCard>
-          <MDBCard className='mb-2 px-1 shadow' id='homeJobCard'>
-            <MDBCardBody>
-              <div>
-                <span className='me-2'><img height='13px' src="https://th.bing.com/th/id/OIP.jelNQlhvt5JOQeR1nyWL1gAAAA?rs=1&pid=ImgDetMain" alt="" /></span>
-                <span className='me-3' style={{ fontSize: "13px", fontWeight: "600" }}>Tata Consultancy Services</span>
-                <span style={{ fontSize: "13px" }}>4.3 <IoMdStar className='mb-1' /></span>
-              </div>
-              <div className='mt-1'>
-                <span className='text-primary' style={{ fontSize: "16px", fontWeight: "1000" }}>Software Engineer</span><br />
-                <span style={{ fontSize: "14px" }}><b>Kochi, India</b></span><br />
-                <span style={{ fontSize: "14px" }}><MdOutlineCurrencyRupee />15K - <MdOutlineCurrencyRupee />17K/M</span>
-              </div>
-              <div className='d-flex mt-1'>
-                <div className='w-50'><span className='text-primary px-2 py-1 rounded' style={{ backgroundColor: "rgb(175, 236, 255)", fontSize: "14px" }}><PiBuildingOfficeFill /> Apply</span></div>
-                <span className='w-50 d-flex justify-content-end align-items-end text-secondary' style={{ float: "right", fontSize: "13px" }}>7 days ago</span>
-              </div>
-            </MDBCardBody>
-          </MDBCard>
-        </Col>
-        <Col className='col-8 pe-4 py-2' id='jobOverviewDiv'>
-          <JobOverview />
-        </Col>
-      </Row>
-    </div>
-  )
+    return (
+        <div>
+            <Row className='w-100 ps-4 bg-white' style={{ height: "450px" }}>
+                <div className='bg-light d-flex ps-5' id='GSdiv'>
+                    <div className='ms-5'>
+                        <h1>Browse, Apply, and <br /> Kickstart Your Career!</h1>
+                        <p className='text-secondary my-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Hic adipisci dolore explicabo dolorum doloribus.</p>
+                        <button className='btn'><b>Get Started <FaArrowRight /></b></button>
+                    </div>
+                </div>
+                <div className='p-0 bg-light' id='GSimgDiv'>
+                    <div className='w-100 d-flex align-items-center'>
+                        <img className='border border-white' src="https://i.postimg.cc/8z4bGXnx/Adobe-Stock-360465349.jpg" alt="" />
+                    </div>
+                </div>
+            </Row>
+            <div className='d-flex justify-content-center py-4'>
+                <div className='w-50 text-center'>
+                    <h3 className='mb-3' style={{fontFamily:"Jost", fontWeight:"1000"}}>Explore more</h3>
+                    <Row className='w-100 ms-0 justify-content-center'>
+                        <Col className='col-2  py-4 mx-3'>
+                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><PiSuitcaseSimpleFill /></button>
+                            <p className='mt-3 text-dark'><b>Jobs</b></p>
+                        </Col>
+                        <Col className='col-2  py-4 mx-3'>
+                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><PiBuildingOfficeFill /></button>
+                            <p className='mt-3 text-dark'><b>Companies</b></p>
+                        </Col>
+                        <Col className='col-2  py-4 mx-3'>
+                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><RxActivityLog /></button>
+                            <p className='mt-3 text-dark'><b>Your Activities</b></p>
+                        </Col>
+                        <Col className='col-2  py-4 mx-3'>
+                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><ImUserTie /></button>
+                            <p className='mt-3 text-dark'><b>Profile</b></p>
+                        </Col>
+                    </Row>
+                </div>
+            </div>
+            <div className='d-flex justify-content-center py-4'>
+                <div className='w-50 text-center'>
+                    <p className='text-secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Ipsum aspernatur libero, quidem iure animi tempore vel culpa ipsa qui.</p>
+                    <h3 className='mb-0' style={{fontFamily:"Jost", fontWeight:"1000"}}>Top 5 Companies</h3>
+                    <p className='text-secondary' style={{fontSize:"15px"}}>Based on Rating</p>
+                    <Row className='w-100 ms-0 justify-content-center'>
+                        <Col className='col-2  py-4 mx-2'>
+                            <img height='50px' src="https://companieslogo.com/img/orig/CTSH-82a8444b.png?t=1652276339&download=true" alt="" />
+                            <p className='mt-3 text-dark'><b>4.7 <FaStar className='mb-1' /></b></p>
+                        </Col>
+                        <Col className='col-2 py-4 mx-2'>
+                            <img height='50px' src="https://f4s-uploads.s3-eu-west-1.amazonaws.com/referrers/generic/2023/03/13/TCS-Stacked-Logo-Colour-CMYK_4_1.png" alt="" />
+                            <p className='mt-3 text-dark'><b>4.5 <FaStar className='mb-1' /></b></p>
+                        </Col>
+                        <Col className='col-2 py-4 mx-2'>
+                            <img height='50px' src="https://1000logos.net/wp-content/uploads/2021/05/Wipro-logo.png" alt="" />
+                            <p className='mt-3 text-dark'><b>4.2 <FaStar className='mb-1' /></b></p>
+                        </Col>
+                        <Col className='col-2 py-4 mx-2'>
+                            <img height='50px' src="https://www.pngall.com/wp-content/uploads/15/Accenture-Logo-PNG-Images.png" alt="" />
+                            <p className='mt-3 text-dark'><b>4.2 <FaStar className='mb-1' /></b></p>
+                        </Col>
+                        <Col className='col-2 py-4 mx-2'>
+                            <img height='50px' src="https://logodownload.org/wp-content/uploads/2019/10/deloitte-logo-0.png" alt="" />
+                            <p className='mt-3 text-dark'><b>4.0 <FaStar className='mb-1' /></b></p>
+                        </Col>
+                    </Row>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Home

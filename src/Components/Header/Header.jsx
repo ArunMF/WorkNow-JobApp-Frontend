@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css'
 import { MDBNavbar } from 'mdb-react-ui-kit';
 import { MdNotificationsActive } from "react-icons/md";
@@ -6,14 +6,34 @@ import logo from '../../Images/mainLogo.gif'
 import Dropdown from 'react-bootstrap/Dropdown';
 import { TbLogout2 } from "react-icons/tb";
 import { useNavigate } from 'react-router-dom';
+import { BsStars } from "react-icons/bs";
 
 function Header({ pathname }) {
 
   const navigate = useNavigate();
+  const sampRole = "Company";
+
+  const [role, setRole] = useState('JobSeeker')
 
   const liStyle = {
     borderBottom: "2px solid black"
   }
+
+  const navDisableStyle = {
+    pointerEvents: "none"
+  }
+
+  function navbarDisableFunc() {
+    if (pathname == '' || pathname == 'SignUp' || pathname == 'ForgotPassword') {
+      return navDisableStyle;
+    }
+  }
+
+  useEffect(() => {
+    if (sampRole) {
+      setRole(sampRole)
+    }
+  }, [])
 
   return (
     <div>
@@ -31,24 +51,61 @@ function Header({ pathname }) {
             <h1 className='pt-2'><span style={{ fontFamily: "Lilita One" }}>Work</span><span className='text-primary' style={{ fontFamily: "Playwrite NG Modern" }}>Now</span></h1>
           </div>
           {/* </MDBNavbarBrand> */}
-          <div className='w-50 pt-4 mt-2'>
+          <div className='w-50 pt-4 mt-2' style={navbarDisableFunc()}>
             <div className='d-flex justify-content-center'>
-              <nav>
-                <ul className='d-flex'>
-                  <li className='mx-4' style={(pathname == 'Home') ? liStyle : {}}><a href="/Home">Jobs</a></li>
-                  <li className='mx-4' style={(pathname == 'AllCompanies') ? liStyle : {}}><a href="/AllCompanies">Companies</a></li>
-                  <li className='mx-4' style={(pathname == 'YourActivities') ? liStyle : {}}><a href="/YourActivities">Your Activity</a></li>
-                </ul>
-              </nav>
+
+              {/* Navbar for Job seeker */}
+              {
+                role == "JobSeeker" &&
+                <nav>
+                  <ul className='d-flex'>
+                    <li className='mx-4' style={(pathname == 'Home') ? liStyle : {}}>
+                      <a href={ sampRole ? "/Home" : "#" }>Home</a>
+                    </li>
+                    <li className='mx-4' style={(pathname == 'AllJobs') ? liStyle : {}}>
+                      <a href={ sampRole ? "/AllJobs" : "#" }>All Jobs</a>
+                    </li>
+                    <li className='mx-4' style={(pathname == 'AllCompanies') ? liStyle : {}}>
+                      <a href={ sampRole ? "/AllCompanies" : "#" }>Companies</a>
+                    </li>
+                  </ul>
+                </nav>
+              }
+
+              {/* Navbar for Company */}
+              {
+                role == "Company" &&
+                <nav>
+                  <ul className='d-flex'>
+                    <li className='mx-4' style={(pathname == 'CompanyHomePage') ? liStyle : {}}><a href="/CompanyHomePage">Home</a></li>
+                    <li className='mx-4' style={(pathname == 'PostAJob') ? liStyle : {}}><a href="/PostAJob"><BsStars /> Post a Job</a></li>
+                    <li className='mx-4' style={(pathname == 'AllApplications') ? liStyle : {}}><a href="/AllApplications">Applications</a></li>
+                  </ul>
+                </nav>
+              }
+
+              {/* Navbar for Admin */}
+              {
+                role == "Admin" &&
+                <nav>
+                  <ul className='d-flex'>
+                    <li className='mx-4' style={(pathname == 'Home') ? liStyle : {}}><a href="/Home">Home</a></li>
+                    <li className='mx-4' style={(pathname == 'AllCompanies') ? liStyle : {}}><a href="/AllCompanies">Job Reports</a></li>
+                    <li className='mx-4' style={(pathname == 'YourActivities') ? liStyle : {}}><a href="/YourActivities">Approvals</a></li>
+                  </ul>
+                </nav>
+              }
+
+              {/* Common settings */}
               <div className='mx-4 pt-2 border-0'>
                 <Dropdown id='settingsDropdown'>
                   <Dropdown.Toggle variant="white" id="dropdown-basic" className='border-0 px-0 pt-1'>
-                    <span>SETTINGS</span>
+                    <span>Settings</span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu id='settingsOpts'>
-                    <button className='btn btn-white w-100 text-start text-primary' onClick={()=>{navigate('/ChangePassword')}}>Change password</button>
-                    <button className='btn btn-white w-100 text-start text-danger' onClick={()=>{navigate('/DeleteAccount')}}>Delete account</button>
+                    <button className='btn btn-white w-100 text-start text-primary' onClick={() => { navigate('/ChangePassword') }}>Change password</button>
+                    <button className='btn btn-white w-100 text-start text-danger' onClick={() => { navigate('/DeleteAccount') }}>Delete account</button>
                     <button className='btn btn-white w-100 text-start text-danger'><TbLogout2 /> Logout</button>
                   </Dropdown.Menu>
                 </Dropdown>

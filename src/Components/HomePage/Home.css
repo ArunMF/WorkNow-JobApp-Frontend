@@ -1,32 +1,30 @@
-#jobOverviewDiv{
-    height: 615px;
-    overflow: auto;
-    top: 20px;
-    position: sticky;
-}
-#jobInput {
-    background: url('https://icon-library.com/images/search-icon-png-transparent/search-icon-png-transparent-18.jpg') no-repeat scroll 10px 10px;
-    padding-left: 30px;
-    border: 1px;
-    border-radius: 15px 0px 0px 15px;
+#GSdiv{
+    width: 65%;
+    align-items: center;
 }
 
-#locationInput{
-    padding-left: 30px;
-    border: 1px;
-    border-radius: 0px 15px 15px 0px;
+#GSdiv h1{
+    font-family: "Jost";
+    font-weight: 1000;
 }
 
-#searchBtn{
-    border-radius: 10px;
+#GSdiv button{
+    background-color: rgb(0, 128, 122);
+    color: white;
 }
 
-#homeJobCard{
-    border: 1px solid rgb(255, 255, 255);
-    cursor: pointer;
+#GSimgDiv{
+    width: 35%;
 }
 
-#homeJobCard:hover{
-    /* background-color: rgb(252, 252, 252); */
-    border: 1px solid rgb(0, 0, 0);
+#GSimgDiv div{
+    height: 100%;
+    border-radius: 0px 0px 0px 200px;
+    background-color: rgb(0, 128, 122);
+}
+
+#GSimgDiv img{
+    /* width: 400px; */
+    height: 330px;
+    margin-left: -30%;
 }

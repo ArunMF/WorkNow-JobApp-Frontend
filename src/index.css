@@ -6,3 +6,12 @@
     font-weight: 400;
     /* color: rgb(175, 236, 255); */
 }
+
+/* button{
+    background-color: aqua;
+} */
+
+#btnStyle{
+    background-color: rgb(0, 128, 122);
+    color: white;
+}

@@ -95,6 +95,8 @@ function ApplyJob() {
                     <button className='btn btn-dark w-100 mt-3'>Apply</button>
                 </div>
             </div>
+
+            {/* About Job */}
             <div className='bg-white m-5 py-3 px-4' id='JobDescription' style={expRadio ? expTrueStyle : expFalseStyle}>
                 <div className='border-bottom pt-2'>
                     <span><b>Programmer Trainee</b></span>
@@ -141,20 +143,20 @@ function ApplyJob() {
                     <div className='py-2'>
                         <h6 style={{ fontWeight: "800" }}><HiLightBulb className='mb-1' /> Skills</h6>
                         <Row className='px-3'>
-                            <p className='py-1 me-3' id='skills'><TiTick /> HTML</p>
-                            <p className='py-1 me-3' id='skills'><TiTick /> CSS</p>
-                            <p className='py-1 me-3' id='skills'><TiTick /> Javascript</p>
-                            <p className='py-1 me-3' id='skills'><TiTick /> ReactJs</p>
+                            <p className='py-1 me-3 rounded' id='skills'><TiTick className='mb-1' /> HTML</p>
+                            <p className='py-1 me-3 rounded' id='skills'><TiTick className='mb-1' /> CSS</p>
+                            <p className='py-1 me-3 rounded' id='skills'><TiTick className='mb-1' /> Javascript</p>
+                            <p className='py-1 me-3 rounded' id='skills'><TiTick className='mb-1' /> ReactJs</p>
                         </Row>
                     </div>
 
                     {/* Education, etc. */}
                     <div>
-                        <p className='my-3'><b><FaGraduationCap /> Education: </b>Bachelor's Degree</p>
-                        <p className='my-3'><b><MdWork /> Work Experience: </b>1 - 2 Year(s)</p>
-                        <p className='my-3'><b><FaUserTie /> Employement Type: </b>Full-time</p>
-                        <p className='my-3'><b><MdOutlinePayments /> Salary: </b><MdOutlineCurrencyRupee />18000 - <MdOutlineCurrencyRupee />21000/Month</p>
-                        <p className='my-3'><b><MdLocationCity /> Location Type: </b>On-site</p>
+                        <p className='my-3'><b><FaGraduationCap className='mb-1' /> Education </b><br />Bachelor's Degree</p>
+                        <p className='my-3'><b><MdWork className='mb-1' /> Work Experience </b><br />1 - 2 Year(s)</p>
+                        <p className='my-3'><b><FaUserTie className='mb-1' /> Employement Type </b><br />Full-time</p>
+                        {/* <p className='my-3'><b><MdOutlinePayments className='mb-1' /> Salary </b><br/><MdOutlineCurrencyRupee />18000 - <MdOutlineCurrencyRupee />21000/Month</p> */}
+                        <p className='my-3'><b><MdLocationCity className='mb-1' /> Mode of Work </b><br />On-site</p>
                     </div>
 
                     {/* Other details */}

@@ -38,7 +38,7 @@ function ChangePassword() {
                             <Form.Control type="password" placeholder="Enter confirm password" />
                         </Form.Group>
 
-                        <button className='btn btn-primary w-100' type='button'>Confirm</button>
+                        <button className='btn w-100' type='button' id='btnStyle'>Confirm</button>
                     </Form>
                 </Col>
             </Row>
