@@ -1,0 +1,10 @@
+#compRevHead{
+    font-size: 20px;
+    font-family: "Jost";
+    font-weight: 800;
+}
+
+#allReviewDiv{
+    height: 500px;
+    overflow: auto;
+}

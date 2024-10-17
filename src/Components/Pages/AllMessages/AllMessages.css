@@ -1,0 +1,16 @@
+#msgSearchInput{
+    padding-left: 30px;
+    border: 1px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#allmsgsDiv{
+    min-height: 530px;
+}
+
+#msgOverviewCol{
+    min-height: 530px;
+    overflow: auto;
+    top: 30px;
+    position: sticky;
+}

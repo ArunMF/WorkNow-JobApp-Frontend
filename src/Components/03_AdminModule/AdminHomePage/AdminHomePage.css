@@ -1,0 +1,25 @@
+#AMGSdiv{
+    width: 65%;
+    align-items: center;
+}
+
+#AMGSdiv h1{
+    font-family: "Jost";
+    font-weight: 1000;
+}
+
+#AMGSimgDiv{
+    width: 35%;
+}
+
+#AMGSimgDiv div{
+    height: 100%;
+    border-radius: 0px 0px 0px 200px;
+    background-color: rgb(0, 128, 122);
+}
+
+#AMGSimgDiv img{
+    /* width: 500px; */
+    height: 330px;
+    margin-left: -30%;
+}

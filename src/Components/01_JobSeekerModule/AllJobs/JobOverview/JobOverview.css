@@ -1,0 +1,18 @@
+#companyName{
+    font-size: 18px;
+    font-weight: 1000;
+}
+
+#designation{
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+#skills{
+    background-color: rgb(175, 255, 195);
+    width: auto;
+}
+
+/* #btnStyle{
+    background-color: rgb(0, 128, 122);
+} */

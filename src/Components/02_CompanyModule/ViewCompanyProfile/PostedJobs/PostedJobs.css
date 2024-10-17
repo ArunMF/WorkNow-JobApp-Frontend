@@ -1,0 +1,24 @@
+#jobCard:hover{
+    box-shadow: 1px 1px 10px rgb(219, 219, 219);
+}
+
+#jobSearchInput{
+    padding-left: 30px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#jobCard{
+    cursor: pointer;
+}
+
+#jobCard #jobTitle{
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#PostedJobCardsDiv{
+    height: auto;
+    max-height: 500px;
+    overflow: auto;
+}

@@ -11,7 +11,7 @@ import { BsStars } from "react-icons/bs";
 function Header({ pathname }) {
 
   const navigate = useNavigate();
-  const sampRole = "Company";
+  const sampRole = "Admin";
 
   const [role, setRole] = useState('JobSeeker')
 
@@ -77,7 +77,7 @@ function Header({ pathname }) {
                 role == "Company" &&
                 <nav>
                   <ul className='d-flex'>
-                    <li className='mx-4' style={(pathname == 'CompanyHomePage') ? liStyle : {}}><a href="/CompanyHomePage">Home</a></li>
+                    <li className='mx-4' style={(pathname == 'Company-Home') ? liStyle : {}}><a href="/Company-Home">Home</a></li>
                     <li className='mx-4' style={(pathname == 'PostAJob') ? liStyle : {}}><a href="/PostAJob"><BsStars /> Post a Job</a></li>
                     <li className='mx-4' style={(pathname == 'AllApplications') ? liStyle : {}}><a href="/AllApplications">Applications</a></li>
                   </ul>
@@ -90,8 +90,8 @@ function Header({ pathname }) {
                 <nav>
                   <ul className='d-flex'>
                     <li className='mx-4' style={(pathname == 'Home') ? liStyle : {}}><a href="/Home">Home</a></li>
-                    <li className='mx-4' style={(pathname == 'AllCompanies') ? liStyle : {}}><a href="/AllCompanies">Job Reports</a></li>
-                    <li className='mx-4' style={(pathname == 'YourActivities') ? liStyle : {}}><a href="/YourActivities">Approvals</a></li>
+                    <li className='mx-4' style={(pathname == 'AllCompanies') ? liStyle : {}}><a href="/AllCompanies">Manage Jobs</a></li>
+                    <li className='mx-4' style={(pathname == 'Company-Approval') ? liStyle : {}}><a href="/Company-Approval">Approvals</a></li>
                   </ul>
                 </nav>
               }
@@ -103,7 +103,7 @@ function Header({ pathname }) {
                     <span>Settings</span>
                   </Dropdown.Toggle>
 
-                  <Dropdown.Menu id='settingsOpts'>
+                  <Dropdown.Menu className='shadow' id='settingsOpts'>
                     <button className='btn btn-white w-100 text-start text-primary' onClick={() => { navigate('/ChangePassword') }}>Change password</button>
                     <button className='btn btn-white w-100 text-start text-danger' onClick={() => { navigate('/DeleteAccount') }}>Delete account</button>
                     <button className='btn btn-white w-100 text-start text-danger'><TbLogout2 /> Logout</button>
@@ -123,7 +123,8 @@ function Header({ pathname }) {
                 style={{ borderRadius: "15px" }}
                 src="https://i.postimg.cc/zfZzKgC3/arun-mynatty1-1.jpg"
                 alt=""
-                height="30px" />
+                height="30"
+                width='30' />
               <p className='ms-1 pt-1'><b>Arun M F</b></p>
             </div>
           </div>
