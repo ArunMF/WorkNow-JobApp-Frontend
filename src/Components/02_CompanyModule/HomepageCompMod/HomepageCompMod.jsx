@@ -36,23 +36,23 @@ function HomepageCompMod() {
           <h3 className='mb-2' style={{ fontFamily: "Jost", fontWeight: "1000" }}>Explore more</h3>
           <Row className='w-100 ms-0 justify-content-center'>
             <Col className='col-2 py-4'>
-              <button className='btn btn-white btn-outline-dark fs-2 px-4'><TbBuildingSkyscraper /></button>
+              <button className='btn fs-2 px-4 shadow' id='btnStyle1'><TbBuildingSkyscraper /></button>
               <p className='mt-2 text-dark'><b>Company Profile</b></p>
             </Col>
             <Col className='col-2 py-4'>
-              <button className='btn btn-white btn-outline-dark fs-2 px-4'><MdPostAdd /></button>
+              <button className='btn fs-2 px-4 shadow' id='btnStyle1'><MdPostAdd /></button>
               <p className='mt-2 text-dark'><b>Post a Job</b></p>
             </Col>
             <Col className='col-2 py-4'>
-              <button className='btn btn-white btn-outline-dark fs-2 px-4'><RxActivityLog /></button>
+              <button className='btn fs-2 px-4 shadow' id='btnStyle1'><RxActivityLog /></button>
               <p className='mt-2 text-dark'><b>Job Applications</b></p>
             </Col>
             <Col className='col-2 py-4'>
-              <button className='btn btn-white btn-outline-dark fs-2 px-4'><BiMessageAltDetail /></button>
+              <button className='btn fs-2 px-4 shadow' id='btnStyle1'><BiMessageAltDetail /></button>
               <p className='mt-2 text-dark'><b>Messages</b></p>
             </Col>
             <Col className='col-2 py-4'>
-              <button className='btn btn-white btn-outline-dark fs-2 px-4'><MdStars /></button>
+              <button className='btn fs-2 px-4 shadow' id='btnStyle1'><MdStars /></button>
               <p className='mt-2 text-dark'><b>Reviews</b></p>
             </Col>
           </Row>

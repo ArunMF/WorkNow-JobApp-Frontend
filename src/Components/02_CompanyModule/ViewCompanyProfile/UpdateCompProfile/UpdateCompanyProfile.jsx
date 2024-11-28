@@ -7,7 +7,7 @@ function UpdateCompanyProfile() {
             <h4 style={{ fontFamily: "Jost", fontWeight: "700" }}>Update company profile</h4>
             <p className='mb-3 text-secondary' style={{ fontSize: "14px" }}>You can update company profile here.</p>
             <Form>
-                <Form.Group className="mb-3 w-100 me-1" controlId="formBasicFsName">
+                {/* <Form.Group className="mb-3 w-100 me-1" controlId="formBasicFsName">
                     <Form.Label className='ms-1 text-success'><b>Company name</b></Form.Label>
                     <Form.Control type="text" value={"Cognizant Technology Solutions"} style={{ fontSize: "14px" }} />
                 </Form.Group>
@@ -15,7 +15,7 @@ function UpdateCompanyProfile() {
                 <Form.Group className="mb-3 w-100 me-1" controlId="formBasicFsName">
                     <Form.Label className='ms-1 text-success'><b>Industry</b></Form.Label>
                     <Form.Control type="text" value={"Information Technology Support Services"} style={{ fontSize: "14px" }} />
-                </Form.Group>
+                </Form.Group> */}
 
                 <Form.Group className="mb-3 w-100 me-1" controlId="formBasicFsName">
                     <Form.Label className='ms-1 text-success'><b>About company</b></Form.Label>

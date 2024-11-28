@@ -1,11 +1,8 @@
-#jobOverviewDiv{
-    height: 615px;
-    overflow: auto;
-    top: 20px;
-    position: sticky;
+#allJobsCard:hover{
+    box-shadow: 1px 1px 10px rgb(219, 219, 219);
 }
-#jobInput {
-    background: url('https://icon-library.com/images/search-icon-png-transparent/search-icon-png-transparent-18.jpg') no-repeat scroll 10px 10px;
+
+#jobInput{
     padding-left: 30px;
     border: 1px;
     border-radius: 15px 0px 0px 15px;
@@ -17,16 +14,29 @@
     border-radius: 0px 15px 15px 0px;
 }
 
-#searchBtn{
-    border-radius: 10px;
-}
-
-#allJobsJobCard{
-    border: 1px solid rgb(255, 255, 255);
+#allJobsCard{
     cursor: pointer;
 }
 
-#allJobsJobCard:hover{
-    /* background-color: rgb(252, 252, 252); */
-    border: 1px solid rgb(0, 0, 0);
+#allJobsCard #jobTitle{
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#filterJobs{
+    height: 340px;
+    top: 30px;
+    position: sticky;
+    font-size: 15px;
+}
+
+#filterJobs h3{
+    font-family: 'Jost';
+    font-weight: 700;
+}
+
+#jobDescModal{
+    height: 500px;
+    overflow: auto;
 }

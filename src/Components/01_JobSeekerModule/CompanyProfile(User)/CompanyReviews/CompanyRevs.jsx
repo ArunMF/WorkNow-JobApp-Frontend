@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './CompanyRevs.css'
 import { Col, Row } from 'react-bootstrap'
 import { FaRegStar, FaStar, FaUserGroup } from 'react-icons/fa6'
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import ViewReviewReply from '../../../02_CompanyModule/CompReviews/ViewReviewReply/ViewReviewReply';
 
 function CompanyRevs() {
+
+    const [rev1Status, setRev1Status] = useState('replied')
+
     return (
         <div className='bg-white mx-3 p-4'>
             <Row className='pt-2 py-3' style={{ borderBottom: "1px solid rgba(163, 163, 163, 0.308)" }}>
@@ -57,40 +61,28 @@ function CompanyRevs() {
                         </Form>
                     </div>
                 </div>
-                <Row id='compProfRevRow'>
+                <Row id='compProfRevRow' className='pt-4'>
 
-                    <Card className='col-4 my-2 border-0'>
-                        <div className='py-3 px-2 border rounded' id='revCard'>
-                            <Card.Body className=''>
-                                <span className='d-flex justify-content-center text-warning'><FaStar className='mb-2' /><FaStar className='mb-2' /><FaStar className='mb-2' /><FaStar className='mb-2' /><FaRegStar className='mb-2' /></span>
-                                <div className='text-center mt-4'>
-                                    <img id='userImg' className='border border-secondary' src="https://i.postimg.cc/VvXcfGnT/arun-mynatty1-1.jpg" height='50px' width='50px' alt="" />
-                                    <p className='mb-0 mt-1'><b>Arun Francis</b></p>
-                                    <p className='text-secondary mb-0' style={{ fontSize: "10px" }}>10 July 2024</p>
+                    {/* Reviews */}
+                    <div className='p-4 mb-3 shadow'>
+                        <div className='d-flex'>
+                            <img src="https://i.postimg.cc/zfZzKgC3/arun-mynatty1-1.jpg" height='40' width='40' style={{ borderRadius: "20px" }} alt="" />
+                            <div className='ps-2 w-100'>
+                                <div className='d-flex'>
+                                    <p className='w-75 mb-0'><b>Arun Francis</b></p>
+                                    <p className='w-25 mb-0 text-end text-secondary' style={{ fontSize: "10px" }}><b>13 Jul 2024</b></p>
                                 </div>
-                                <div className='mt-2 mb-3 text-center'>
-                                    <img height='20px' src="https://companieslogo.com/img/orig/CTSH-82a8444b.png?t=1652276339&download=true" alt="" />
-                                </div>
-                                <p className='text-black' style={{ fontSize: "13px" }}>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione obcaecati deleniti iure sunt, beatae quos expedita voluptas quod."</p>
-                            </Card.Body>
+                                <p className='text-warning mb-2' style={{ fontSize: "13px", marginTop: "-3px" }}><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /></p>
+                                <p style={{ fontSize: "13px" }} className='mb-2'>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt in pariatur commodi perferendis! Blanditiis impedit illo, enim atque commodi natus fugit et molestiae odio voluptates porro magnam asperiores eum."</p>
+
+                                {
+                                    rev1Status == 'replied' &&
+                                    <ViewReviewReply />
+                                }
+                            </div>
                         </div>
-                    </Card>
-                    <Card className='col-4 my-2 border-0'>
-                        <div className='py-3 px-2 border rounded' id='revCard'>
-                            <Card.Body className=''>
-                                <span className='d-flex justify-content-center text-warning'><FaStar className='mb-2' /><FaStar className='mb-2' /><FaStar className='mb-2' /><FaStar className='mb-2' /><FaRegStar className='mb-2' /></span>
-                                <div className='text-center mt-4'>
-                                    <img id='userImg' className='border border-secondary' src="https://i.postimg.cc/VvXcfGnT/arun-mynatty1-1.jpg" height='50px' width='50px' alt="" />
-                                    <p className='mb-0 mt-1'><b>Arun Francis</b></p>
-                                    <p className='text-secondary mb-0' style={{ fontSize: "10px" }}>10 July 2024</p>
-                                </div>
-                                <div className='mt-2 mb-3 text-center'>
-                                    <img height='20px' src="https://companieslogo.com/img/orig/CTSH-82a8444b.png?t=1652276339&download=true" alt="" />
-                                </div>
-                                <p className='text-black' style={{ fontSize: "13px" }}>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione obcaecati deleniti iure sunt, beatae quos expedita voluptas quod."</p>
-                            </Card.Body>
-                        </div>
-                    </Card>
+                    </div>
+
                 </Row>
             </Row>
         </div>

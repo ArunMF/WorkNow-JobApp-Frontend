@@ -44,12 +44,12 @@ function Signup() {
                             <h5 className='text-center text-dark mb-4' style={{ fontFamily: "Jost" }}><b>Select your role</b></h5>
                             <div className='d-flex justify-content-center'>
                                 <div className='text-center mx-3'>
-                                    <button className='btn btn-light btn-outline-success fs-1 px-5' onClick={() => { setRole('Jobseeker') }}><PiSuitcaseSimpleFill /></button>
-                                    <p className='mt-2 text-success'><b>Job seeker</b></p>
+                                    <button className='btn fs-1 px-5' id='btnStyle1' onClick={() => { setRole('Jobseeker') }}><PiSuitcaseSimpleFill /></button>
+                                    <p className='mt-2' style={{color:"rgb(0, 87, 82)"}}><b>Job seeker</b></p>
                                 </div>
                                 <div className='text-center mx-3'>
-                                    <button className='btn btn-light btn-outline-success fs-1 px-5' onClick={() => { setRole('company') }}><PiBuildingOfficeFill /></button>
-                                    <p className='mt-2 text-success'><b>Company</b></p>
+                                    <button className='btn fs-1 px-5' id='btnStyle1' onClick={() => { setRole('company') }}><PiBuildingOfficeFill /></button>
+                                    <p className='mt-2' style={{color:"rgb(0, 87, 82)"}}><b>Company</b></p>
                                 </div>
                             </div>
                         </div>

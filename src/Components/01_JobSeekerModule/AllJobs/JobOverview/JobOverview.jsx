@@ -21,7 +21,7 @@ function JobOverview() {
     const navigate = useNavigate()
 
     return (
-        <div className='p-4 rounded border-0 border-bottom'>
+        <div className='p-3 rounded border-0 border-bottom'>
             <Row className='border-0'>
 
                 {/* Company details */}
@@ -97,12 +97,12 @@ function JobOverview() {
                 </div>
 
                 {/* Education, etc. */}
-                <div>
-                    <p className='my-3'><b><FaGraduationCap className='mb-1' /> Education </b><br />Bachelor's Degree</p>
-                    <p className='my-3'><b><MdWork className='mb-1' /> Work Experience </b><br />1 - 2 Year(s)</p>
-                    <p className='my-3'><b><FaUserTie className='mb-1' /> Employement Type </b><br />Full-time</p>
-                    <p className='my-3'><b><MdOutlinePayments className='mb-1' /> Salary </b><br /><MdOutlineCurrencyRupee />18000 - <MdOutlineCurrencyRupee />21000/Month</p>
-                    <p className='my-3'><b><MdLocationCity className='mb-1' /> Mode of Work </b><br />On-site</p>
+                <div id='educationEtc'>
+                    <p className='my-3'><b><FaGraduationCap className='mb-1' /> Education </b><br /><span>Bachelor's Degree</span></p>
+                    <p className='my-3'><b><MdWork className='mb-1' /> Work Experience </b><br /><span>1 - 2 Year(s) of experience as a Programmer Trainee</span></p>
+                    <p className='my-3'><b><FaUserTie className='mb-1' /> Employement Type </b><br /><span>Full-time</span></p>
+                    <p className='my-3'><b><MdOutlinePayments className='mb-1' /> Salary </b><br /><span><MdOutlineCurrencyRupee />18000 - <MdOutlineCurrencyRupee />21000/Month</span></p>
+                    <p className='my-3'><b><MdLocationCity className='mb-1' /> Mode of Work </b><br /><span>On-site</span></p>
                 </div>
 
                 {/* Other details */}

@@ -11,6 +11,14 @@
     /* background-color: rgb(205, 232, 255); */
 }
 
+#loginMainDiv{
+    min-height: 500px;
+}
+
 #loginMainDiv h5{
+    text-shadow: 1px 1px 5px gray;
+}
+
+#toastTitle{
     text-shadow: 1px 1px 5px gray;
 }

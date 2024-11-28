@@ -11,7 +11,7 @@ import { BsStars } from "react-icons/bs";
 function Header({ pathname }) {
 
   const navigate = useNavigate();
-  const sampRole = "Admin";
+  const sampRole = "JobSeeker";
 
   const [role, setRole] = useState('JobSeeker')
 
@@ -114,10 +114,10 @@ function Header({ pathname }) {
           </div>
 
           <div className='w-25 d-flex justify-content-end'>
-            <div className='me-3 pt-2'>
+            {/* <div className='me-3 pt-2'>
               <button className='btn btn-white border-0 fs-4 mt-4'><MdNotificationsActive className='text-primary' /></button>
-            </div>
-            <div className='d-flex pt-4 mt-3'>
+            </div> */}
+            <div className='d-flex mt-3 align-items-center'>
               <img
                 className='border'
                 style={{ borderRadius: "15px" }}
@@ -125,7 +125,7 @@ function Header({ pathname }) {
                 alt=""
                 height="30"
                 width='30' />
-              <p className='ms-1 pt-1'><b>Arun M F</b></p>
+              <p className='ms-1 my-0' style={{fontSize:"14px"}}><b>Arun M F</b></p>
             </div>
           </div>
         </div>

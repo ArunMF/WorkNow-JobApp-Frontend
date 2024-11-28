@@ -40,23 +40,23 @@ function AdminHomePage() {
                     <h3 className='mb-2' style={{ fontFamily: "Jost", fontWeight: "1000" }}>Explore more</h3>
                     <Row className='w-100 ms-0 justify-content-center'>
                         <Col className='col-2 py-4'>
-                            <button className='btn btn-white btn-outline-dark fs-2 px-4' onClick={()=>{navigate('/Company-Approval')}}><TbBuildingSkyscraper /></button>
+                            <button className='btn fs-2 px-4 shadow' id='btnStyle1' onClick={()=>{navigate('/Company-Approval')}}><TbBuildingSkyscraper /></button>
                             <p className='mt-2 text-dark'><b>Approvals</b></p>
                         </Col>
                         {/* <Col className='col-2 py-4'>
-                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><MdPostAdd /></button>
+                            <button className='btn fs-2 px-4'><MdPostAdd /></button>
                             <p className='mt-2 text-dark'><b>Post a Job</b></p>
                         </Col> */}
                         <Col className='col-2 py-4'>
-                            <button className='btn btn-white btn-outline-dark fs-2 px-4' onClick={()=>{navigate('/AllMessages')}}><BiMessageAltDetail /></button>
+                            <button className='btn fs-2 px-4 shadow' id='btnStyle1' onClick={()=>{navigate('/AllMessages')}}><BiMessageAltDetail /></button>
                             <p className='mt-2 text-dark'><b>Messages</b></p>
                         </Col>
                         <Col className='col-2 py-4'>
-                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><FaBuildingUser /></button>
+                            <button className='btn fs-2 px-4 shadow' id='btnStyle1'><FaBuildingUser /></button>
                             <p className='mt-2 text-dark'><b>Job seekers & Companies</b></p>
                         </Col>
                         <Col className='col-2 py-4'>
-                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><RxActivityLog /></button>
+                            <button className='btn fs-2 px-4 shadow' id='btnStyle1'><RxActivityLog /></button>
                             <p className='mt-2 text-dark'><b>Manage Jobs</b></p>
                         </Col>
                     </Row>

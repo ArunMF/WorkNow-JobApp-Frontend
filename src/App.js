@@ -12,7 +12,7 @@ import YourActivity from './Components/01_JobSeekerModule/YourActivity/YourActiv
 import ChangePassword from './Components/Pages/ChangePassword/ChangePassword';
 import DeleteAccount from './Components/Pages/DeleteAccount/DeleteAccount';
 import PostAJob from './Components/02_CompanyModule/PostAJob/PostAJob';
-import AllApplications from './Components/02_CompanyModule/Applications/AllApplications';
+import AllApplications from './Components/02_CompanyModule/AllApplications/AllApplications';
 import HomepageCompMod from './Components/02_CompanyModule/HomepageCompMod/HomepageCompMod';
 import AllJobs from './Components/01_JobSeekerModule/AllJobs/AllJobs';
 import Home from './Components/01_JobSeekerModule/HomePage/Home';

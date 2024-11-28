@@ -6,5 +6,6 @@
 }
 
 #SvJobCards:hover{
-    background-color: rgb(245, 245, 245);
+    /* background-color: rgb(245, 245, 245); */
+    box-shadow: 1px 1px 10px rgb(219, 219, 219);
 }

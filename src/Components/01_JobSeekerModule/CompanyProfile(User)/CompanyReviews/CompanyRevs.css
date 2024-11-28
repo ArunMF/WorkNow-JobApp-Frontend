@@ -1,16 +1,5 @@
-#compProfRev #userImg{
-    border-radius: 25px;
-}
-
-#compProfRev #compProfRevRow{
-    height: 700px;
+#compProfRevRow{
+    height: auto;
+    max-height: 700px;
     overflow: auto;
-}
-
-#compProfRev{
-    border-bottom: 1px solid rgba(163, 163, 163, 0.308);
-}
-
-#compProfRev #revCard:hover{
-    box-shadow: 1px 1px 10px rgb(211, 211, 211);
 }

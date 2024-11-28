@@ -103,7 +103,7 @@ function PostedJobs() {
                         {/* Job overview modal */}
                         <Modal show={show} animation={false} size='xl'>
                             <Modal.Body className='p-4' id="jobDescModal">
-                                {/* <JobPostOVmodal /> */}
+                                
                             </Modal.Body>
                             <Modal.Footer>
                                 <button className='btn btn-dark' onClick={handleClose}>Close</button>

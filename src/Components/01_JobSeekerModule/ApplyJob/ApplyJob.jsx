@@ -105,7 +105,7 @@ function ApplyJob() {
                 <div id='jobDetails' className='pt-4'>
                     <span><b>Position</b>: Programmer Trainee</span><br />
                     <span><b>Location</b>: Kochi, India</span><br />
-                    <span><b>Type</b>: Full-Time</span>
+                    <span><b>Salary</b>: <MdOutlineCurrencyRupee />18000 - <MdOutlineCurrencyRupee />21000/Month</span>
 
                     {/* Job description */}
                     <div className='my-3'>

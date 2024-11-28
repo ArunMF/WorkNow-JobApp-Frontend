@@ -20,7 +20,7 @@ function SvJobOverview() {
     const navigate = useNavigate()
 
     return (
-        <div className=' p-4'>
+        <div className='text-black p-4'>
             <Row>
 
                 {/* Company details */}
@@ -48,7 +48,7 @@ function SvJobOverview() {
                 {/* Job description */}
                 <div className='mb-3'>
                     <h6 style={{ fontWeight: "800" }}>Job Description:</h6>
-                    <p>ATeam Soft Solutions is seeking a highly skilled ReactJS Developer with a minimum of 4 years of experience to join our dynamic team. The ideal candidate will be proficient in developing and implementing user interface components using ReactJS concepts and workflows such as Redux, Flux, and Webpack.<br /><br />
+                    <p style={{fontSize:"14px"}}>ATeam Soft Solutions is seeking a highly skilled ReactJS Developer with a minimum of 4 years of experience to join our dynamic team. The ideal candidate will be proficient in developing and implementing user interface components using ReactJS concepts and workflows such as Redux, Flux, and Webpack.<br /><br />
 
                         Key Responsibilities:<br />
 
@@ -80,7 +80,7 @@ function SvJobOverview() {
                 {/* Skills */}
                 <div className='py-2'>
                     <h6 style={{ fontWeight: "800" }}><HiLightBulb className='mb-1' /> Skills</h6>
-                    <Row className='px-3'>
+                    <Row className='px-3' style={{fontSize:"14px"}}>
                         <p className='py-1 me-3 rounded' id='skills'><TiTick className='mb-1' />HTML</p>
                         <p className='py-1 me-3 rounded' id='skills'><TiTick className='mb-1' />CSS</p>
                         <p className='py-1 me-3 rounded' id='skills'><TiTick className='mb-1' />Javascript</p>
@@ -89,18 +89,18 @@ function SvJobOverview() {
                 </div>
 
                 {/* Education, etc. */}
-                <div>
-                    <p className='my-3'><b><FaGraduationCap className='mb-1' /> Education </b><br />Bachelor's Degree</p>
-                    <p className='my-3'><b><MdWork className='mb-1' /> Work Experience </b><br />1 - 2 Year(s)</p>
-                    <p className='my-3'><b><FaUserTie className='mb-1' /> Employement Type </b><br />Full-time</p>
-                    {/* <p className='my-3'><b><MdOutlinePayments className='mb-1' /> Salary </b><br/><MdOutlineCurrencyRupee />18000 - <MdOutlineCurrencyRupee />21000/Month</p> */}
-                    <p className='my-3'><b><MdLocationCity className='mb-1' /> Mode of Work </b><br />On-site</p>
+                <div id='educationEtc'>
+                    <p className='my-3'><b><FaGraduationCap className='mb-1' /> Education </b><br /><span>Bachelor's Degree</span></p>
+                    <p className='my-3'><b><MdWork className='mb-1' /> Work Experience </b><br /><span>1 - 2 Year(s) of experience as a Programmer Trainee</span></p>
+                    <p className='my-3'><b><FaUserTie className='mb-1' /> Employement Type </b><br /><span>Full-time</span></p>
+                    {/* <p className='my-3'><b><MdOutlinePayments className='mb-1' /> Salary </b><br /><span><MdOutlineCurrencyRupee />18000 - <MdOutlineCurrencyRupee />21000/Month</span></p> */}
+                    <p className='my-3'><b><MdLocationCity className='mb-1' /> Mode of Work </b><br /><span>On-site</span></p>
                 </div>
 
                 {/* Other details */}
                 <div className='py-3'>
                     <h6 style={{ fontWeight: "800" }}>Other Details</h6>
-                    <p>If you aspire to work in the dynamic world of IT development and digital marketing, Ginger Technologies is your best bet. We take pride in offering promising opportunities to seasoned professionals as well as passionate newcomers looking to make a mark. With our commitment to providing a healthy and nurturing work environment, we aim to pave the way for your professional success. Join us on a journey towards achieving your dreams in a space that fosters growth and excellence.</p>
+                    <p style={{fontSize:"14px"}}>If you aspire to work in the dynamic world of IT development and digital marketing, Ginger Technologies is your best bet. We take pride in offering promising opportunities to seasoned professionals as well as passionate newcomers looking to make a mark. With our commitment to providing a healthy and nurturing work environment, we aim to pave the way for your professional success. Join us on a journey towards achieving your dreams in a space that fosters growth and excellence.</p>
                 </div>
             </div>
         </div>

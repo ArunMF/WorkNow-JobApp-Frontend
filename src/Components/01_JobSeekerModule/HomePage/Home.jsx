@@ -30,19 +30,19 @@ function Home() {
                     <h3 className='mb-3' style={{fontFamily:"Jost", fontWeight:"1000"}}>Explore more</h3>
                     <Row className='w-100 ms-0 justify-content-center'>
                         <Col className='col-2  py-4'>
-                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><PiSuitcaseSimpleFill /></button>
+                            <button className='btn fs-2 px-4 shadow' id='btnStyle1'><PiSuitcaseSimpleFill /></button>
                             <p className='mt-3 text-dark'><b>Jobs</b></p>
                         </Col>
                         <Col className='col-2  py-4'>
-                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><PiBuildingOfficeFill /></button>
+                            <button className='btn fs-2 px-4 shadow' id='btnStyle1'><PiBuildingOfficeFill /></button>
                             <p className='mt-3 text-dark'><b>Companies</b></p>
                         </Col>
                         <Col className='col-2  py-4'>
-                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><RxActivityLog /></button>
+                            <button className='btn fs-2 px-4 shadow' id='btnStyle1'><RxActivityLog /></button>
                             <p className='mt-3 text-dark'><b>Your Activities</b></p>
                         </Col>
                         <Col className='col-2  py-4'>
-                            <button className='btn btn-white btn-outline-dark fs-2 px-4'><ImUserTie /></button>
+                            <button className='btn fs-2 px-4 shadow' id='btnStyle1'><ImUserTie /></button>
                             <p className='mt-3 text-dark'><b>Profile</b></p>
                         </Col>
                     </Row>
