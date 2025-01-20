@@ -9,7 +9,7 @@ import { baseUrl } from '../../baseurl';
 import Toast from 'react-bootstrap/Toast';
 import ToastContainer from 'react-bootstrap/ToastContainer';
 
-function Login() {
+function Login({ onLogin }) {
 
     const navigate = useNavigate()
 
@@ -30,6 +30,7 @@ function Login() {
             await axios.post(`${baseUrl}/login`, loginData)
                 .then((response) => {
                     setLoginErr('')
+                    onLogin(response.data.data, response.data.token);
                     setResMessage(response.data.message)
                     setToastView(true)
                     setTimeout(() => {

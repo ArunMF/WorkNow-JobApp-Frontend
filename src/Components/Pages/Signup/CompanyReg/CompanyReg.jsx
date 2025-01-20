@@ -188,7 +188,6 @@ function CompanyReg() {
     // API integration for company registration
     const signUp = async () => {
         companyData.headquaters = `${compCity}, ${compState}, ${compCountry}`
-        console.log(companyData);
         if (empDataValidation()) {
             // Password hashing
             if (companyData.password) {

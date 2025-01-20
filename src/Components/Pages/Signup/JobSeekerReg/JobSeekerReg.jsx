@@ -12,7 +12,7 @@ function JobSeekerReg() {
         password: "",
         role: "jobseeker",
         phoneNo: "",
-        imageURL: "--",
+        imageURL: "",
         qualification: "",
         resumeURL: ""
     });

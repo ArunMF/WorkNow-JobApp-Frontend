@@ -1,5 +1,6 @@
 #allJobsCard:hover{
-    box-shadow: 1px 1px 10px rgb(219, 219, 219);
+    /* box-shadow: 1px 1px 10px rgb(219, 219, 219); */
+    border: 1px solid rgb(138, 138, 138);
 }
 
 #jobInput{
@@ -25,7 +26,7 @@
 }
 
 #filterJobs{
-    height: 340px;
+    height: 480px;
     top: 30px;
     position: sticky;
     font-size: 15px;

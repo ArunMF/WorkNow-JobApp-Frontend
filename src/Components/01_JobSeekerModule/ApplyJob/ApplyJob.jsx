@@ -12,7 +12,7 @@ import { MdOutlinePayments, MdOutlineCurrencyRupee, MdLocationCity } from "react
 import { FaUserTie, FaStar } from "react-icons/fa";
 import { Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function ApplyJob() {
 
@@ -27,19 +27,23 @@ function ApplyJob() {
         height: '700px'
     };
 
+    const location = useLocation()
+    const { job } = location.state;
+    console.log(job);
+
     return (
         <div className='p-5 bg-light d-flex'>
             <div className='border p-5 bg-white rounded' id='jobForm'>
                 <div>
                     <span style={{ float: "right" }}>
-                        <button className='btn btn-white text-info border-0' onClick={() => navigate('/')}><b>Exit</b></button>
+                        <button className='btn btn-white text-primary border-0' onClick={() => navigate('/AllJobs')}><b>Exit</b></button>
                     </span>
-                    <span className='me-2'><img className='mb-1' height='18px' src="https://companieslogo.com/img/orig/CTSH-82a8444b.png?t=1652276339&download=true" alt="" /></span>
-                    <span className='me-3' id='companyName'>Cognizant Technology Solutions</span>
+                    <span className='me-2'><img className='mb-1' height='18px' src={job.companyLogo} alt="" /></span>
+                    <span className='me-3' id='companyName'>{job.companyName}</span>
                 </div>
                 <div className='mt-2'>
-                    <span className='text-success'><b>Programmer Trainee</b></span><br />
-                    <span className='text-secondary' style={{ fontSize: "15px" }}><b>Kochi, India</b></span>
+                    <span className='text-success'><b>{job.jobTitle}</b></span><br />
+                    <span className='text-secondary' style={{ fontSize: "13px" }}><b>{job.location}</b></span>
                 </div>
                 {/* <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
@@ -47,12 +51,12 @@ function ApplyJob() {
                 <div className='mt-3'>
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicName">
-                            <Form.Label className='ms-1'><b>Name</b></Form.Label>
+                            <Form.Label className='ms-1'><b>Name</b> <span className='text-danger'>*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter name" />
                         </Form.Group>
                         <div className='d-flex'>
                             <Form.Group className="mb-3 w-50 me-1" controlId="formBasicEmail">
-                                <Form.Label className='ms-1'><b>Email address</b></Form.Label>
+                                <Form.Label className='ms-1'><b>Email address</b> <span className='text-danger'>*</span></Form.Label>
                                 <Form.Control type="email" placeholder="Enter email address" />
                             </Form.Group>
 
@@ -61,13 +65,9 @@ function ApplyJob() {
                                 <Form.Control type="number" placeholder="Enter phone number" />
                             </Form.Group>
                         </div>
-                        <Form.Group className="mb-3" controlId="formBasicResume">
-                            <Form.Label className='ms-1'><b>Resume File</b></Form.Label>
-                            <Form.Control type="file" />
-                        </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicExp">
-                            <Form.Label className='ms-1'><b>Do you have any relevant experience?</b></Form.Label>
+                            <Form.Label className='ms-1'><b>Do you have any relevant experience?</b> <span className='text-danger'>*</span></Form.Label>
                             <div className='d-flex ms-2'>
                                 <Form.Check type="radio" onChange={() => { setExpRadio(true) }} name='experience' label="Yes" className='me-4' />
                                 <Form.Check type="radio" onChange={() => { setExpRadio(false) }} name='experience' label="No" />
@@ -76,7 +76,7 @@ function ApplyJob() {
                     </Form>
                     {
                         expRadio &&
-                        <div className='border p-3'>
+                        <div className='border p-4'>
                             <p>Enter a past job that shows relevant experience</p>
                             <h5 className='mb-3'><b>Relevant Experience</b> <span className='fs-6 text-secondary'>(optional)</span></h5>
                             <Form>
@@ -92,7 +92,7 @@ function ApplyJob() {
                             </Form>
                         </div>
                     }
-                    <button className='btn btn-dark w-100 mt-3'>Apply</button>
+                    <button className='btn w-100 mt-3' id='btnStyle'>Continue</button>
                 </div>
             </div>
 
